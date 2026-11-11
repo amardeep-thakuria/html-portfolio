@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies & Interests</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333333;
+            --accent-color: #2c7a7b;
+            --card-bg: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a202c;
+                --text-color: #e2e8f0;
+                --accent-color: #4fd1c5;
+                --card-bg: #2d3748;
+            }
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.25rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 0.5rem 0;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+        }
+
+        li::before {
+            content: "✦";
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Hobbies and Interests</h1>
+        <p>
+            In my free time I enjoy reading books, exploring new hiking trails, and experimenting with cooking different
+            cuisines.
+            I also like to play the guitar and occasionally participate in local music events.
+            Additionally, I have a keen interest in photography and often spend weekends capturing landscapes and
+            cityscapes.
+        </p>
+
+        <h2>Current Creative Projects</h2>
+        <ul>
+            <li>Perfecting a sourdough bread recipe from scratch</li>
+            <li>Learning classical fingerstyle arrangements on guitar</li>
+            <li>Curating a visual photo series of local architecture at sunset</li>
+            <li>Trekking through three new state park trails this season</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
